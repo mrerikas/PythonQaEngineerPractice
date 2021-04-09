@@ -1,2 +1,6 @@
 /python_selenium_practic/.pytest_cache/
-
+/python_selenium_practic/__pycache__
+.idea
+/Luminor
+logfile.log
+screen.png

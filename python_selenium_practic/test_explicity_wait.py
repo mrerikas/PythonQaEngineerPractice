@@ -44,3 +44,9 @@ def test_count_searches_objects(setup_method):
 
     wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, ".promoInfo")))
     print(driver.find_element(By.CSS_SELECTOR, ".promoInfo").text)
+
+    amounts = driver.find_elements(By.XPATH, "//tr/td[5]/p")
+    sum_amount = 0
+    for amount in amounts:
+        sum_amount += int(amount.text)
+    print(sum_amount)

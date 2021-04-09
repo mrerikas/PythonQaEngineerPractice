@@ -7,6 +7,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
+my_list = []
 
 
 @pytest.fixture()
@@ -24,6 +25,6 @@ def test_count_searches_objects(setup_method):
     time.sleep(3)
     list_of_products = driver.find_elements(By.XPATH, "//div[@class='product-action']/button")
     for product in list_of_products:
-        print(product.find_element(By.XPATH, "parent::div/parent::div/h4").text)
+        my_list.append(product.find_element(By.XPATH, "parent::div/parent::div/h4").text)
         product.click()
-
+    print(my_list)

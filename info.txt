@@ -1,1 +1,7 @@
 https://pypi.org/project/webdriver-manager/
+
+http://the-internet.herokuapp.com/ <--- Selenium practice web
+
+https://rahulshettyacademy.com/#/practice-project <--- Selenium practice web
+
+Paleisti testus su HTML reportu --> py.test --html=report.html -s -v
